@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap導入後</title>
+
+  <!-- Bootstrap CSS（これだけ追加！） -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    /* 最小限のカスタムCSS */
+    .hero {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 80px 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ナビゲーションバー（Bootstrapのクラスを使うだけ） -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">私のサイト</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">ホーム</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">概要</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">お問い合わせ</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ヒーローセクション -->
+  <div class="hero">
+    <h1 class="display-4">Bootstrap導入後</h1>
+    <p class="lead">クラス名を書くだけで美しいデザインに！</p>
+  </div>
+
+  <!-- コンテンツ -->
+  <div class="container mt-5">
+    <h2 class="mb-4">カードの例</h2>
+
+    <!-- カード3枚（Bootstrapのグリッドとカード） -->
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400" class="card-img-top" alt="画像1">
+          <div class="card-body">
+            <h5 class="card-title">カード1</h5>
+            <p class="card-text">Bootstrapを使うと、クラス名を書くだけで綺麗なカードが作れます！</p>
+            <a href="#" class="btn btn-primary">詳しく見る</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400" class="card-img-top" alt="画像2">
+          <div class="card-body">
+            <h5 class="card-title">カード2</h5>
+            <p class="card-text">レスポンシブ対応も自動でできています。試しにブラウザ幅を変えてみてください。</p>
+            <a href="#" class="btn btn-primary">詳しく見る</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <img src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=400" class="card-img-top" alt="画像3">
+          <div class="card-body">
+            <h5 class="card-title">カード3</h5>
+            <p class="card-text">CSSをほとんど書かずに、プロフェッショナルなサイトが作れます！</p>
+            <a href="#" class="btn btn-primary">詳しく見る</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrapの利点 -->
+    <div class="alert alert-success mt-5" role="alert">
+      <h4 class="alert-heading">✨ Bootstrapの利点</h4>
+      <ul class="mb-0">
+        <li><strong>CSSをほとんど書かなくてOK</strong> → クラス名を追加するだけ</li>
+        <li><strong>レスポンシブが自動</strong> → スマホでも綺麗に表示</li>
+        <li><strong>ブラウザ互換性の心配なし</strong> → Bootstrapが対応済み</li>
+        <li><strong>統一されたデザイン</strong> → プロフェッショナルな見た目</li>
+        <li><strong>開発スピードが速い</strong> → すぐにサイトが完成</li>
+      </ul>
+    </div>
+
+    <!-- コード比較 -->
+    <div class="mt-5">
+      <h3 class="mb-4">📊 コード量の比較</h3>
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-header bg-danger text-white">
+              <strong>Bootstrap無し</strong>
+            </div>
+            <div class="card-body">
+              <pre class="mb-0" style="font-size: 12px;"><code>&lt;!-- HTML --&gt;
+&lt;div class="card"&gt;
+  &lt;img src="..." class="card-img"&gt;
+  &lt;div class="card-body"&gt;
+    &lt;h3 class="card-title"&gt;タイトル&lt;/h3&gt;
+    &lt;p class="card-text"&gt;説明文&lt;/p&gt;
+    &lt;a href="#" class="btn"&gt;ボタン&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- CSS（自分で書く必要がある） --&gt;
+&lt;style&gt;
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.card-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.card-body {
+  padding: 20px;
+}
+.card-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.card-text {
+  color: #666;
+  margin-bottom: 15px;
+}
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+}
+.btn:hover {
+  background-color: #0056b3;
+}
+&lt;/style&gt;</code></pre>
+              <p class="text-danger mt-3 mb-0"><strong>約30行のCSSが必要！</strong></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-header bg-success text-white">
+              <strong>Bootstrap有り</strong>
+            </div>
+            <div class="card-body">
+              <pre class="mb-0" style="font-size: 12px;"><code>&lt;!-- HTML（クラス名を書くだけ） --&gt;
+&lt;div class="card"&gt;
+  &lt;img src="..." class="card-img-top"&gt;
+  &lt;div class="card-body"&gt;
+    &lt;h5 class="card-title"&gt;タイトル&lt;/h5&gt;
+    &lt;p class="card-text"&gt;説明文&lt;/p&gt;
+    &lt;a href="#" class="btn btn-primary"&gt;
+      ボタン
+    &lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- CSSは不要！ --&gt;
+（Bootstrapが自動で適用してくれます）</code></pre>
+              <p class="text-success mt-3 mb-0"><strong>CSSを書く必要なし！</strong></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 実際の比較 -->
+    <div class="mt-5 p-4 bg-light border rounded">
+      <h3>🔍 実際に比較してみよう</h3>
+      <p>前のページ（demo-10-before-bootstrap.html）と、このページのHTMLファイルをVSCodeで開いて比べてみてください。</p>
+      <ul>
+        <li><strong>HTML部分</strong>: ほぼ同じ（クラス名が違うだけ）</li>
+        <li><strong>CSS部分</strong>: Bootstrapを使うとほとんど不要！</li>
+        <li><strong>レスポンシブ</strong>: Bootstrapなら自動対応！</li>
+      </ul>
+      <p class="mb-0"><strong>結論:</strong> Bootstrapを使えば、少ないコードで美しいサイトが作れます！</p>
+    </div>
+
+  </div>
+
+  <!-- フッター -->
+  <footer class="bg-dark text-white text-center py-4 mt-5">
+    <p class="mb-0">&copy; 2024 私のサイト. All rights reserved.</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

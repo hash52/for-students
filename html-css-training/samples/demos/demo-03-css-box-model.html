@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>デモ3: CSSボックスモデル</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 20px;
+      background: #f5f5f5;
+    }
+
+    .container {
+      background: white;
+      padding: 20px;
+      margin-bottom: 30px;
+    }
+
+    /* 1. padding（内側の余白）のデモ */
+    .padding-demo {
+      background-color: lightblue;
+      padding: 20px; /* 内側に20pxの余白 */
+      border: 2px solid navy;
+    }
+
+    /* 2. margin（外側の余白）のデモ */
+    .margin-demo {
+      background-color: lightgreen;
+      margin: 30px; /* 外側に30pxの余白 */
+      padding: 15px;
+      border: 2px solid green;
+    }
+
+    /* 3. border（ボーダー）のデモ */
+    .border-demo-1 {
+      border: 3px solid red;
+      padding: 15px;
+      margin: 10px 0;
+    }
+
+    .border-demo-2 {
+      border: 5px dashed blue;
+      padding: 15px;
+      margin: 10px 0;
+    }
+
+    .border-demo-3 {
+      border: 2px dotted purple;
+      padding: 15px;
+      margin: 10px 0;
+    }
+
+    /* 4. すべてを組み合わせたデモ */
+    .combined-demo {
+      background-color: #ffe6e6;
+      border: 4px solid #ff0000;
+      padding: 25px;
+      margin: 20px;
+    }
+
+    /* 5. 部分的な指定のデモ */
+    .partial-demo {
+      background-color: #fff3cd;
+      border: 2px solid #856404;
+      padding-top: 30px;
+      padding-bottom: 10px;
+      padding-left: 20px;
+      padding-right: 20px;
+      margin-bottom: 20px;
+    }
+
+    /* 視覚化のためのヘルパー */
+    .highlight {
+      background-color: yellow;
+      padding: 5px;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>CSSボックスモデルのデモ</h1>
+  <p>すべてのHTML要素は「箱」として扱われます</p>
+
+  <div class="container">
+    <h2>1. padding（内側の余白）</h2>
+    <p>paddingは、要素の<span class="highlight">内側</span>に余白を作ります</p>
+    <div class="padding-demo">
+      この青い背景の領域がpaddingです。<br>
+      文字の周りに20pxの余白があります。
+    </div>
+    <p><strong>使い方:</strong> <code>padding: 20px;</code></p>
+  </div>
+
+  <div class="container">
+    <h2>2. margin（外側の余白）</h2>
+    <p>marginは、要素の<span class="highlight">外側</span>に余白を作ります</p>
+    <div class="margin-demo">
+      この緑の箱は周りに30pxのmarginがあります。<br>
+      他の要素との間に空間ができます。
+    </div>
+    <p><strong>使い方:</strong> <code>margin: 30px;</code></p>
+  </div>
+
+  <div class="container">
+    <h2>3. border（ボーダー）</h2>
+    <p>borderは、要素の周りに線を引きます</p>
+
+    <div class="border-demo-1">
+      solid（実線）のボーダー
+    </div>
+
+    <div class="border-demo-2">
+      dashed（破線）のボーダー
+    </div>
+
+    <div class="border-demo-3">
+      dotted（点線）のボーダー
+    </div>
+
+    <p><strong>使い方:</strong> <code>border: 3px solid red;</code></p>
+  </div>
+
+  <div class="container">
+    <h2>4. すべてを組み合わせる</h2>
+    <div class="combined-demo">
+      <strong>この箱は:</strong>
+      <ul>
+        <li>背景色: ピンク（background-color）</li>
+        <li>赤い枠線: 4px（border）</li>
+        <li>内側の余白: 25px（padding）</li>
+        <li>外側の余白: 20px（margin）</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="container">
+    <h2>5. 部分的な指定</h2>
+    <p>上下左右を個別に指定できます</p>
+    <div class="partial-demo">
+      <strong>この箱は:</strong>
+      <ul>
+        <li>上のpadding: 30px</li>
+        <li>下のpadding: 10px</li>
+        <li>左右のpadding: 20px</li>
+      </ul>
+    </div>
+    <p><strong>使い方:</strong></p>
+    <pre>
+padding-top: 30px;
+padding-bottom: 10px;
+padding-left: 20px;
+padding-right: 20px;
+    </pre>
+  </div>
+
+  <div class="container" style="background: #e3f2fd; padding: 30px;">
+    <h2>💡 Chrome検証ツールで確認しよう</h2>
+    <ol>
+      <li>この箱の上で<strong>右クリック</strong></li>
+      <li><strong>「検証」</strong>を選択</li>
+      <li>右側のパネルで「Styles」タブを見る</li>
+      <li>下の方にボックスモデルの図が表示されます</li>
+    </ol>
+    <p>青=内容、緑=padding、黄=border、オレンジ=marginで表示されます！</p>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>プログラミング学習記録 | Web開発への道</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    .hero {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 80px 0;
+    }
+    .progress-card {
+      border-left: 4px solid #0d6efd;
+      transition: all 0.3s;
+    }
+    .progress-card:hover {
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+    .skill-badge {
+      display: inline-block;
+      padding: 8px 16px;
+      margin: 5px;
+      border-radius: 20px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ナビゲーションバー -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">💻 プログラミング学習記録</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">ホーム</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#learning">学習内容</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">制作物</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#goals">今後の目標</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ヒーローセクション -->
+  <div class="hero text-center">
+    <div class="container">
+      <h1 class="display-4 fw-bold">Web開発への道</h1>
+      <p class="lead mt-3">完全未経験からWebエンジニアを目指す学習記録</p>
+      <p class="mt-2">学習開始: 2024年1月 | 累計学習時間: 150時間</p>
+    </div>
+  </div>
+
+  <!-- 学習内容セクション -->
+  <div class="container mt-5" id="learning">
+    <h2 class="text-center mb-4">学習内容</h2>
+
+    <div class="row">
+      <!-- カード1: HTML/CSS -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 progress-card">
+          <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=400" class="card-img-top" alt="コーディング">
+          <div class="card-body">
+            <h5 class="card-title">HTML & CSS</h5>
+            <p class="card-text">
+              Web開発の基礎となるHTML/CSSを学習。
+              Progateで基礎を学び、実際に複数のWebサイトを制作しました。
+            </p>
+            <div class="progress mb-2">
+              <div class="progress-bar bg-success" style="width: 80%">80%</div>
+            </div>
+            <span class="badge bg-success">基礎習得済み</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- カード2: JavaScript -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 progress-card">
+          <img src="https://images.unsplash.com/photo-1579468118864-1b9ea3c0db4a?w=400" class="card-img-top" alt="JavaScript">
+          <div class="card-body">
+            <h5 class="card-title">JavaScript</h5>
+            <p class="card-text">
+              動的なWebサイトを作るため、JavaScriptを学習中。
+              DOM操作やイベント処理など、基本的な構文を習得しています。
+            </p>
+            <div class="progress mb-2">
+              <div class="progress-bar bg-warning" style="width: 50%">50%</div>
+            </div>
+            <span class="badge bg-warning text-dark">学習中</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- カード3: React -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 progress-card">
+          <img src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=400" class="card-img-top" alt="React">
+          <div class="card-body">
+            <h5 class="card-title">React</h5>
+            <p class="card-text">
+              モダンなフロントエンド開発のため、Reactを学習予定。
+              まずは基本的なコンポーネントの作り方から学びます。
+            </p>
+            <div class="progress mb-2">
+              <div class="progress-bar bg-danger" style="width: 10%">10%</div>
+            </div>
+            <span class="badge bg-danger">これから</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 制作物セクション -->
+  <div class="container mt-5" id="projects">
+    <h2 class="text-center mb-4">制作物</h2>
+
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <div class="card mb-3 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">1. ポートフォリオサイト</h5>
+            <p class="card-text">自己紹介とスキルを紹介するポートフォリオサイトを制作。HTML/CSSとBootstrapを使用。</p>
+            <div>
+              <span class="skill-badge bg-primary text-white">HTML</span>
+              <span class="skill-badge bg-info text-white">CSS</span>
+              <span class="skill-badge bg-success text-white">Bootstrap</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card mb-3 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">2. レスポンシブWebサイト</h5>
+            <p class="card-text">架空のカフェのWebサイトを制作。レスポンシブデザインを実装し、モバイルでも快適に閲覧可能。</p>
+            <div>
+              <span class="skill-badge bg-primary text-white">HTML</span>
+              <span class="skill-badge bg-info text-white">CSS</span>
+              <span class="skill-badge bg-warning text-dark">Responsive</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card mb-3 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">3. Todoアプリ（制作中）</h5>
+            <p class="card-text">JavaScriptを使ったTodoアプリを制作中。タスクの追加・削除・完了機能を実装予定。</p>
+            <div>
+              <span class="skill-badge bg-primary text-white">HTML</span>
+              <span class="skill-badge bg-info text-white">CSS</span>
+              <span class="skill-badge bg-warning text-dark">JavaScript</span>
+              <span class="skill-badge bg-danger text-white">制作中</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 今後の目標セクション -->
+  <div class="container mt-5 mb-5" id="goals">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <h2 class="mb-4">なぜプログラミングを学んでいるのか</h2>
+        <p>
+          プログラミングを学び始めたきっかけは、「自分の手でWebサービスを作りたい」という思いからでした。
+          日常的に使っているWebサイトやアプリが、どのように作られているのか、その仕組みを知りたいと思ったのです。
+        </p>
+        <p>
+          学習を始めて3ヶ月が経ちましたが、最初は全く理解できなかったHTML/CSSも、
+          今では簡単なWebサイトなら自分で作れるようになりました。
+          この成長を実感できることが、学習を続けるモチベーションになっています。
+        </p>
+        <p>
+          特に楽しいのは、自分で書いたコードが実際にブラウザ上で動く瞬間です。
+          エラーが出て何時間も悩むこともありますが、解決できたときの達成感は格別です。
+          プログラミングは、論理的思考力や問題解決能力も鍛えられるので、学ぶ価値が高いと感じています。
+        </p>
+        <p>
+          今後の目標は、まずJavaScriptをしっかりと習得し、動的なWebアプリケーションを作れるようになることです。
+          そして、ReactやNode.jsなどのモダンな技術を学び、フルスタックエンジニアを目指したいと考えています。
+          最終的には、自分のアイデアをカタチにして、多くの人に使ってもらえるWebサービスを作りたいです。
+        </p>
+
+        <div class="mt-4 p-4 bg-light rounded">
+          <h4>今後の学習予定</h4>
+          <ul>
+            <li><strong>短期目標（3ヶ月）</strong>: JavaScriptの基礎を習得し、Todoアプリを完成させる</li>
+            <li><strong>中期目標（6ヶ月）</strong>: Reactを学び、SPAを作れるようになる</li>
+            <li><strong>長期目標（1年）</strong>: バックエンド（Node.js、データベース）を学び、フルスタック開発ができるようになる</li>
+            <li><strong>最終目標</strong>: オリジナルのWebサービスを公開し、ユーザーに使ってもらう</li>
+          </ul>
+        </div>
+
+        <div class="mt-4 p-4 bg-info bg-opacity-10 rounded border border-info">
+          <h4>学習で大切にしていること</h4>
+          <ul>
+            <li><strong>毎日コードを書く</strong>: 15分でもいいので、毎日継続する</li>
+            <li><strong>手を動かす</strong>: 理論だけでなく、実際に作って学ぶ</li>
+            <li><strong>アウトプットする</strong>: 学んだことを記録し、共有する</li>
+            <li><strong>完璧を目指さない</strong>: まず動くものを作り、後から改善する</li>
+            <li><strong>楽しむ</strong>: 苦しいときもあるが、楽しみながら学ぶ</li>
+          </ul>
+        </div>
+
+        <div class="text-center mt-4">
+          <button class="btn btn-primary btn-lg">学習リソース</button>
+          <button class="btn btn-outline-primary btn-lg ms-2">GitHubを見る</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- フッター -->
+  <footer class="bg-dark text-white text-center py-3 mt-5">
+    <p class="mb-0">&copy; 2024 プログラミング学習記録. All rights reserved.</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

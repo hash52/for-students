@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>推しのアイドル | YOASOBI</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    .hero {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 100px 0;
+      text-align: center;
+    }
+    .card {
+      border: none;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .card:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s;
+    }
+    .song-item {
+      background: #f8f9fa;
+      padding: 15px;
+      margin-bottom: 10px;
+      border-radius: 10px;
+      border-left: 4px solid #667eea;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ナビゲーションバー -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold" href="#">🎵 推しのアイドル</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">ホーム</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#profile">プロフィール</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#songs">楽曲</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#reason">推しポイント</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ヒーローセクション -->
+  <div class="hero">
+    <div class="container">
+      <h1 class="display-3 fw-bold">YOASOBI</h1>
+      <p class="lead mt-3">「小説を音楽にする」ユニット</p>
+      <p class="mt-2">Ayase（コンポーザー）× ikura（ボーカル）</p>
+      <button class="btn btn-light btn-lg mt-3">公式サイト</button>
+    </div>
+  </div>
+
+  <!-- プロフィールセクション -->
+  <div class="container mt-5" id="profile">
+    <h2 class="text-center mb-4">プロフィール</h2>
+
+    <div class="row">
+      <!-- カード1: Ayase -->
+      <div class="col-md-4 mb-4">
+        <div class="card text-center h-100">
+          <img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=400" class="card-img-top" alt="音楽制作">
+          <div class="card-body">
+            <h5 class="card-title">Ayase（アヤセ）</h5>
+            <p class="card-text">
+              コンポーザー・プロデューサー。
+              ボカロPとしても活動し、独特の世界観を持つ楽曲を制作。
+              YOASOBIの全楽曲を手掛ける。
+            </p>
+            <span class="badge bg-primary">コンポーザー</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- カード2: ikura -->
+      <div class="col-md-4 mb-4">
+        <div class="card text-center h-100">
+          <img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?w=400" class="card-img-top" alt="歌手">
+          <div class="card-body">
+            <h5 class="card-title">ikura（幾田りら）</h5>
+            <p class="card-text">
+              ボーカル。透明感のある歌声が特徴。
+              シンガーソングライターとしてソロ活動も行い、
+              幅広い表現力を持つ。
+            </p>
+            <span class="badge bg-danger">ボーカル</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- カード3: ユニット -->
+      <div class="col-md-4 mb-4">
+        <div class="card text-center h-100">
+          <img src="https://images.unsplash.com/photo-1598387993281-cecf8b71a8f8?w=400" class="card-img-top" alt="ライブ">
+          <div class="card-body">
+            <h5 class="card-title">ユニットコンセプト</h5>
+            <p class="card-text">
+              「小説を音楽にする」をコンセプトに、
+              様々な小説を原作とした楽曲を制作。
+              物語と音楽の融合が魅力。
+            </p>
+            <span class="badge bg-success">小説×音楽</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 楽曲紹介セクション -->
+  <div class="container mt-5" id="songs">
+    <h2 class="text-center mb-4">代表曲</h2>
+
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <div class="song-item">
+          <h5>夜に駆ける</h5>
+          <p class="mb-1">デビュー曲。切ない恋の物語を歌った楽曲。Billboard Japan総合チャート1位獲得。</p>
+          <span class="badge bg-warning text-dark">代表曲</span>
+        </div>
+
+        <div class="song-item">
+          <h5>群青</h5>
+          <p class="mb-1">卒業をテーマにした感動的な楽曲。青春の切なさと希望が詰まっている。</p>
+          <span class="badge bg-info">青春</span>
+        </div>
+
+        <div class="song-item">
+          <h5>アイドル</h5>
+          <p class="mb-1">アニメ「推しの子」OPテーマ。アイドルの本音と建前を描いた楽曲。世界的ヒット。</p>
+          <span class="badge bg-danger">世界的ヒット</span>
+        </div>
+
+        <div class="song-item">
+          <h5>怪物</h5>
+          <p class="mb-1">アニメ「BEASTARS」EDテーマ。人間の本性を描いた力強い楽曲。</p>
+          <span class="badge bg-dark">アニメタイアップ</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 推しポイントセクション -->
+  <div class="container mt-5 mb-5" id="reason">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <h2 class="mb-4">なぜYOASOBIが好きなのか</h2>
+        <p>
+          YOASOBIを初めて聴いたのは、デビュー曲「夜に駆ける」がリリースされた直後でした。
+          独特のメロディラインと、ikuraさんの透明感のある歌声に一瞬で心を奪われました。
+          それ以来、すべての楽曲を追いかけ続けています。
+        </p>
+        <p>
+          YOASOBIの魅力は、なんといっても「小説を音楽にする」というコンセプトです。
+          各楽曲には原作となる小説があり、その物語を3〜4分の音楽で表現しています。
+          小説を読んでから楽曲を聴くと、より深く楽曲の世界観を理解できるのが素晴らしいです。
+        </p>
+        <p>
+          また、Ayaseさんの作る楽曲は、どれも独創的でありながら、キャッチーで耳に残ります。
+          ボカロPとしての経験が活きているのか、従来のJ-POPにはない新しさがあります。
+          そして、ikuraさんの歌声は本当に素晴らしく、感情表現が豊かで、聴くたびに涙が出そうになります。
+        </p>
+        <p>
+          「アイドル」が世界的にヒットし、海外でもYOASOBIの名前が知られるようになったことも嬉しいです。
+          これからも、物語と音楽の融合という独自の世界観で、多くの人を魅了し続けてほしいと思っています。
+        </p>
+
+        <div class="mt-4 p-4 bg-light rounded">
+          <h4>基本情報</h4>
+          <ul>
+            <li><strong>結成</strong>: 2019年</li>
+            <li><strong>メンバー</strong>: Ayase、ikura</li>
+            <li><strong>ジャンル</strong>: J-POP、エレクトロポップ</li>
+            <li><strong>レーベル</strong>: Sony Music Records</li>
+            <li><strong>代表曲</strong>: 夜に駆ける、群青、アイドル、怪物</li>
+          </ul>
+        </div>
+
+        <div class="text-center mt-4">
+          <button class="btn btn-primary btn-lg me-2">公式サイト</button>
+          <button class="btn btn-outline-primary btn-lg">YouTubeチャンネル</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- フッター -->
+  <footer class="bg-dark text-white text-center py-3 mt-5">
+    <p class="mb-0">&copy; 2024 推しのアイドル. All rights reserved.</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

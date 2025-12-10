@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>デモ4: CSSの色指定</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 20px;
+      background: #f5f5f5;
+    }
+
+    .container {
+      background: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+    }
+
+    /* 1. 文字色（color） */
+    .text-red { color: red; }
+    .text-blue { color: blue; }
+    .text-green { color: green; }
+    .text-hex { color: #ff6600; }
+    .text-rgb { color: rgb(153, 51, 255); }
+
+    /* 2. 背景色（background-color） */
+    .bg-yellow {
+      background-color: yellow;
+      padding: 10px;
+      margin: 5px 0;
+    }
+
+    .bg-lightblue {
+      background-color: lightblue;
+      padding: 10px;
+      margin: 5px 0;
+    }
+
+    .bg-pink {
+      background-color: pink;
+      padding: 10px;
+      margin: 5px 0;
+    }
+
+    .bg-hex {
+      background-color: #e0f7fa;
+      padding: 10px;
+      margin: 5px 0;
+    }
+
+    /* 3. 文字色と背景色の組み合わせ */
+    .combo-1 {
+      color: white;
+      background-color: #2c3e50;
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 5px;
+    }
+
+    .combo-2 {
+      color: #fff;
+      background-color: #e74c3c;
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 5px;
+    }
+
+    .combo-3 {
+      color: #2c3e50;
+      background-color: #f39c12;
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 5px;
+    }
+
+    /* 4. ボーダーの色 */
+    .border-red {
+      border: 3px solid red;
+      padding: 10px;
+      margin: 10px 0;
+    }
+
+    .border-green {
+      border: 3px solid green;
+      padding: 10px;
+      margin: 10px 0;
+    }
+
+    .border-blue {
+      border: 3px solid blue;
+      padding: 10px;
+      margin: 10px 0;
+    }
+
+    /* 5. カラーコード一覧表 */
+    .color-box {
+      display: inline-block;
+      width: 100px;
+      height: 60px;
+      margin: 10px;
+      text-align: center;
+      line-height: 60px;
+      color: white;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>CSSの色指定デモ</h1>
+
+  <div class="container">
+    <h2>1. 文字色（color）</h2>
+    <p class="text-red">この文字は赤色です - color: red;</p>
+    <p class="text-blue">この文字は青色です - color: blue;</p>
+    <p class="text-green">この文字は緑色です - color: green;</p>
+    <p class="text-hex">この文字はオレンジ色です - color: #ff6600;</p>
+    <p class="text-rgb">この文字は紫色です - color: rgb(153, 51, 255);</p>
+  </div>
+
+  <div class="container">
+    <h2>2. 背景色（background-color）</h2>
+    <div class="bg-yellow">
+      背景が黄色 - background-color: yellow;
+    </div>
+    <div class="bg-lightblue">
+      背景が水色 - background-color: lightblue;
+    </div>
+    <div class="bg-pink">
+      背景がピンク - background-color: pink;
+    </div>
+    <div class="bg-hex">
+      背景が淡い青 - background-color: #e0f7fa;
+    </div>
+  </div>
+
+  <div class="container">
+    <h2>3. 文字色と背景色の組み合わせ</h2>
+    <div class="combo-1">
+      白い文字 × 濃い青の背景 = 読みやすい！
+    </div>
+    <div class="combo-2">
+      白い文字 × 赤の背景 = 目立つ！
+    </div>
+    <div class="combo-3">
+      黒い文字 × オレンジの背景 = 暖かい印象
+    </div>
+    <p><strong>ポイント:</strong> 文字色と背景色のコントラストが大事！</p>
+  </div>
+
+  <div class="container">
+    <h2>4. ボーダーの色</h2>
+    <div class="border-red">
+      赤いボーダー - border: 3px solid red;
+    </div>
+    <div class="border-green">
+      緑のボーダー - border: 3px solid green;
+    </div>
+    <div class="border-blue">
+      青いボーダー - border: 3px solid blue;
+    </div>
+  </div>
+
+  <div class="container">
+    <h2>5. よく使う色のカラーコード</h2>
+    <p>色の指定方法は3種類あります：</p>
+    <ul>
+      <li><strong>色名</strong>: red, blue, greenなど（簡単だが種類が少ない）</li>
+      <li><strong>16進数</strong>: #ff0000, #0000ff など（最もよく使う）</li>
+      <li><strong>RGB</strong>: rgb(255, 0, 0) など（赤・緑・青の混合比）</li>
+    </ul>
+
+    <h3>よく使う色の例</h3>
+    <div style="margin-top: 20px;">
+      <div class="color-box" style="background-color: #e74c3c;">#e74c3c<br>赤</div>
+      <div class="color-box" style="background-color: #3498db;">#3498db<br>青</div>
+      <div class="color-box" style="background-color: #2ecc71;">#2ecc71<br>緑</div>
+      <div class="color-box" style="background-color: #f39c12;">#f39c12<br>オレンジ</div>
+      <div class="color-box" style="background-color: #9b59b6;">#9b59b6<br>紫</div>
+      <div class="color-box" style="background-color: #1abc9c;">#1abc9c<br>ターコイズ</div>
+      <div class="color-box" style="background-color: #34495e;">#34495e<br>濃い灰色</div>
+      <div class="color-box" style="background-color: #95a5a6; color: #333;">#95a5a6<br>薄い灰色</div>
+    </div>
+  </div>
+
+  <div class="container" style="background: #fff3cd; border: 2px solid #856404; padding: 20px;">
+    <h2>💡 色を選ぶツール</h2>
+    <p><strong>AIに聞く:</strong> 「Webサイトで使える青色のカラーコードを教えて」</p>
+    <p><strong>カラーピッカー:</strong> Googleで「color picker」と検索すると色選択ツールが出ます</p>
+    <p><strong>参考サイト:</strong> Coolors.co（配色ジェネレーター）</p>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>デモ7: Bootstrap ナビゲーションバー</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    .demo-section {
+      margin-bottom: 50px;
+    }
+    .explanation {
+      background-color: #fff3cd;
+      border-left: 4px solid #ff9800;
+      padding: 15px;
+      margin: 20px 0;
+    }
+    .content-area {
+      min-height: 300px;
+      padding: 40px 20px;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 例1: 基本のナビゲーションバー -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">私のサイト</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">ホーム</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">概要</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#examples">例</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">お問い合わせ</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="content-area">
+    <h1 class="display-4">Bootstrap ナビゲーションバー</h1>
+    <p class="lead">様々なスタイルのNavbarのデモです</p>
+  </div>
+
+  <div class="container mt-5">
+
+    <div class="explanation">
+      <h4>📌 この例で使っているNavbar</h4>
+      <ul>
+        <li><code>navbar-dark bg-dark</code>: 黒背景に白文字</li>
+        <li><code>navbar-brand</code>: サイト名・ロゴ</li>
+        <li><code>navbar-toggler</code>: スマホ用ハンバーガーメニュー</li>
+        <li><code>ms-auto</code>: メニューを右寄せ</li>
+      </ul>
+    </div>
+
+    <!-- 例2: 明るい色のNavbar -->
+    <div class="demo-section" id="about">
+      <h2>例2: 明るい色のNavbar</h2>
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">🎨 デザインサイト</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarLight">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarLight">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">ホーム</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">ギャラリー</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">ブログ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">お問い合わせ</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <pre class="mt-3 p-3 bg-light border"><code>&lt;nav class="navbar navbar-expand-lg navbar-light bg-light"&gt;
+  &lt;div class="container-fluid"&gt;
+    &lt;a class="navbar-brand" href="#"&gt;サイト名&lt;/a&gt;
+    &lt;ul class="navbar-nav ms-auto"&gt;
+      &lt;li class="nav-item"&gt;
+        &lt;a class="nav-link" href="#"&gt;メニュー&lt;/a&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;</code></pre>
+    </div>
+
+    <!-- 例3: カラフルなNavbar -->
+    <div class="demo-section" id="examples">
+      <h2>例3: カラフルなNavbar（Bootstrapの色）</h2>
+
+      <!-- Primary（青） -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-3">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">bg-primary（青）</a>
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#">ホーム</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">概要</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">お問い合わせ</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Success（緑） -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-success mb-3">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">bg-success（緑）</a>
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#">ホーム</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">概要</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">お問い合わせ</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Danger（赤） -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-danger mb-3">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">bg-danger（赤）</a>
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#">ホーム</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">概要</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">お問い合わせ</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Warning（黄色） -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-warning mb-3">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">bg-warning（黄色）</a>
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#">ホーム</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">概要</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">お問い合わせ</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="explanation">
+        <h4>💡 色の使い分け</h4>
+        <ul>
+          <li><code>bg-primary</code>: 青（標準、ビジネス系）</li>
+          <li><code>bg-success</code>: 緑（エコ、健康系）</li>
+          <li><code>bg-danger</code>: 赤（緊急、重要）</li>
+          <li><code>bg-warning</code>: 黄色（注意、カジュアル）</li>
+          <li><code>bg-dark</code>: 黒（シンプル、モダン）</li>
+          <li><code>bg-light</code>: 白（明るい、清潔）</li>
+        </ul>
+        <p><strong>注意:</strong> 明るい背景には <code>navbar-light</code>、暗い背景には <code>navbar-dark</code> を使います</p>
+      </div>
+    </div>
+
+    <!-- 例4: ボタン付きNavbar -->
+    <div class="demo-section">
+      <h2>例4: ボタン付きNavbar</h2>
+
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">🚀 スタートアップ</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarButton">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarButton">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item"><a class="nav-link" href="#">ホーム</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">機能</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">料金</a></li>
+            </ul>
+            <div>
+              <button class="btn btn-outline-light me-2">ログイン</button>
+              <button class="btn btn-warning">無料で始める</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <pre class="mt-3 p-3 bg-light border"><code>&lt;nav class="navbar navbar-expand-lg navbar-dark bg-dark"&gt;
+  &lt;div class="container-fluid"&gt;
+    &lt;a class="navbar-brand" href="#"&gt;サイト名&lt;/a&gt;
+    &lt;ul class="navbar-nav me-auto"&gt;
+      &lt;!-- メニュー --&gt;
+    &lt;/ul&gt;
+    &lt;div&gt;
+      &lt;button class="btn btn-outline-light"&gt;ログイン&lt;/button&gt;
+      &lt;button class="btn btn-warning"&gt;無料で始める&lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;</code></pre>
+    </div>
+
+    <!-- よくある質問 -->
+    <div class="explanation" id="contact">
+      <h4>❓ よくある質問</h4>
+
+      <h5 class="mt-3">Q1: メニューを左寄せにしたい</h5>
+      <p><code>ms-auto</code> を削除するか、<code>me-auto</code> に変更します</p>
+
+      <h5 class="mt-3">Q2: メニューを中央に配置したい</h5>
+      <p><code>mx-auto</code> を使用します</p>
+
+      <h5 class="mt-3">Q3: スマホでハンバーガーメニューが動かない</h5>
+      <p>Bootstrap JSが読み込まれているか確認してください（ページ下部の <code>&lt;script&gt;</code> タグ）</p>
+
+      <h5 class="mt-3">Q4: Navbarを固定したい</h5>
+      <p><code>fixed-top</code> クラスを追加: <code>&lt;nav class="navbar fixed-top"&gt;</code></p>
+    </div>
+
+    <!-- コピペ用テンプレート -->
+    <div class="mt-5 p-4 bg-light border rounded">
+      <h3>📋 コピペ用テンプレート</h3>
+      <p>以下のコードをコピーして使ってください：</p>
+      <pre class="p-3 bg-white border"><code>&lt;nav class="navbar navbar-expand-lg navbar-dark bg-dark"&gt;
+  &lt;div class="container-fluid"&gt;
+    &lt;a class="navbar-brand" href="#"&gt;サイト名&lt;/a&gt;
+    &lt;button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"&gt;
+      &lt;span class="navbar-toggler-icon"&gt;&lt;/span&gt;
+    &lt;/button&gt;
+    &lt;div class="collapse navbar-collapse" id="navbarNav"&gt;
+      &lt;ul class="navbar-nav ms-auto"&gt;
+        &lt;li class="nav-item"&gt;
+          &lt;a class="nav-link active" href="#"&gt;ホーム&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class="nav-item"&gt;
+          &lt;a class="nav-link" href="#"&gt;概要&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class="nav-item"&gt;
+          &lt;a class="nav-link" href="#"&gt;お問い合わせ&lt;/a&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;</code></pre>
+    </div>
+
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

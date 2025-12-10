@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap導入前</title>
+
+  <style>
+    /* すべて自分でCSSを書く必要がある */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: sans-serif;
+    }
+
+    /* ナビゲーションバーを自分で作る */
+    .navbar {
+      background-color: #333;
+      color: white;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navbar-brand {
+      font-size: 20px;
+      font-weight: bold;
+      color: white;
+      text-decoration: none;
+    }
+
+    .nav-menu {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-menu a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .nav-menu a:hover {
+      color: #ddd;
+    }
+
+    /* レスポンシブは自分で実装 */
+    @media (max-width: 768px) {
+      .nav-menu {
+        display: none; /* スマホ対応が大変 */
+      }
+    }
+
+    /* コンテナを自分で作る */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* グリッドシステムを自分で作る */
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 -10px;
+    }
+
+    .col {
+      flex: 1;
+      padding: 0 10px;
+      margin-bottom: 20px;
+    }
+
+    @media (max-width: 768px) {
+      .col {
+        flex: 100%;
+      }
+    }
+
+    /* カードを自分で作る */
+    .card {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+      background: white;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .card-img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-body {
+      padding: 20px;
+    }
+
+    .card-title {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .card-text {
+      color: #666;
+      margin-bottom: 15px;
+    }
+
+    /* ボタンを自分で作る */
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: #0056b3;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 20px;
+    }
+
+    .footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ナビゲーションバー（自分で作る） -->
+  <nav class="navbar">
+    <a href="#" class="navbar-brand">私のサイト</a>
+    <ul class="nav-menu">
+      <li><a href="#">ホーム</a></li>
+      <li><a href="#">概要</a></li>
+      <li><a href="#">お問い合わせ</a></li>
+    </ul>
+  </nav>
+
+  <!-- ヒーローセクション -->
+  <div class="hero">
+    <h1>Bootstrap導入前</h1>
+    <p>すべてのスタイルを自分で書く必要があります</p>
+  </div>
+
+  <!-- コンテンツ -->
+  <div class="container">
+    <h2 style="margin-bottom: 30px;">カードの例</h2>
+
+    <!-- カード3枚（グリッド） -->
+    <div class="row">
+      <div class="col">
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400" alt="画像1" class="card-img">
+          <div class="card-body">
+            <h3 class="card-title">カード1</h3>
+            <p class="card-text">Bootstrap無しで作ったカードです。CSSを全部自分で書いています。</p>
+            <a href="#" class="btn">詳しく見る</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400" alt="画像2" class="card-img">
+          <div class="card-body">
+            <h3 class="card-title">カード2</h3>
+            <p class="card-text">レスポンシブ対応も自分で実装する必要があります。</p>
+            <a href="#" class="btn">詳しく見る</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=400" alt="画像3" class="card-img">
+          <div class="card-body">
+            <h3 class="card-title">カード3</h3>
+            <p class="card-text">CSSを書く量が多く、時間がかかります。</p>
+            <a href="#" class="btn">詳しく見る</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 問題点の説明 -->
+    <div style="margin-top: 50px; padding: 30px; background-color: #fff3cd; border-left: 4px solid #ff9800; border-radius: 5px;">
+      <h3 style="margin-bottom: 15px;">😰 Bootstrap無しの問題点</h3>
+      <ul style="line-height: 1.8;">
+        <li><strong>CSSを全部自分で書く必要がある</strong> → 時間がかかる</li>
+        <li><strong>レスポンシブ対応が大変</strong> → メディアクエリを自分で書く</li>
+        <li><strong>ブラウザ間の違いに対応が必要</strong> → 互換性の問題</li>
+        <li><strong>デザインの統一が難しい</strong> → 色やサイズがバラバラになりがち</li>
+        <li><strong>コード量が多い</strong> → メンテナンスが大変</li>
+      </ul>
+      <p style="margin-top: 20px; font-weight: bold; color: #856404;">
+        👉 次のページ（demo-11-after-bootstrap.html）でBootstrap版を見てみましょう！
+      </p>
+    </div>
+  </div>
+
+  <!-- フッター -->
+  <footer class="footer">
+    <p>&copy; 2024 私のサイト. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>デモ2: タグの入れ子構造</title>
+  <style>
+    /* 視覚的に構造を理解しやすくするための色分け */
+    body { background: #f5f5f5; padding: 20px; }
+    div { border: 2px solid #333; padding: 15px; margin: 10px 0; background: white; }
+    .level-1 { border-color: #e74c3c; background: #fee; }
+    .level-2 { border-color: #3498db; background: #eff; }
+    .level-3 { border-color: #2ecc71; background: #efe; }
+  </style>
+</head>
+<body>
+
+  <h1>タグの入れ子構造のデモ</h1>
+  <p>HTMLは「箱の中に箱を入れる」ように構造化します</p>
+
+  <!-- レベル1: 外側の箱 -->
+  <div class="level-1">
+    <h2>レベル1: 大きな箱（赤い枠）</h2>
+    <p>この中に小さな箱を入れることができます</p>
+
+    <!-- レベル2: 中の箱 -->
+    <div class="level-2">
+      <h3>レベル2: 中くらいの箱（青い枠）</h3>
+      <p>さらにこの中に箱を入れることができます</p>
+
+      <!-- レベル3: さらに中の箱 -->
+      <div class="level-3">
+        <h4>レベル3: 小さな箱（緑の枠）</h4>
+        <p>このように階層構造を作ります</p>
+        <ul>
+          <li>リスト項目1</li>
+          <li>リスト項目2</li>
+          <li>リスト項目3</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 同じレベルに複数の箱を並べることもできる -->
+    <div class="level-2">
+      <h3>もう1つのレベル2の箱</h3>
+      <p>同じ階層に複数の要素を配置できます</p>
+    </div>
+  </div>
+
+  <hr>
+
+  <h2>実際のWebページの構造例</h2>
+  <div class="level-1">
+    <h2>ページ全体</h2>
+
+    <div class="level-2">
+      <h3>ヘッダー</h3>
+      <p>ロゴ、ナビゲーションメニュー</p>
+    </div>
+
+    <div class="level-2">
+      <h3>メインコンテンツ</h3>
+
+      <div class="level-3">
+        <h4>記事1</h4>
+        <p>記事の内容...</p>
+      </div>
+
+      <div class="level-3">
+        <h4>記事2</h4>
+        <p>記事の内容...</p>
+      </div>
+    </div>
+
+    <div class="level-2">
+      <h3>フッター</h3>
+      <p>コピーライト、リンク</p>
+    </div>
+  </div>
+
+</body>
+</html>
