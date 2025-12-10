@@ -196,11 +196,12 @@ style: |
 <span class="schedule-time">13:15-13:50</span><span>座学① HTML基礎（文章構造）</span>
 <span class="schedule-time">13:50-14:10</span><span>体験① HTMLで文章構造を作る</span>
 <span class="schedule-time">14:10-14:15</span><span>休憩</span>
-<span class="schedule-time">14:15-14:35</span><span>座学② CSS最小限（見た目の調整）</span>
-<span class="schedule-time">14:35-15:00</span><span>座学③ Bootstrap入門</span>
+<span class="schedule-time">14:15-14:30</span><span>座学② CSS最小限（15分）</span>
+<span class="schedule-time">14:30-14:45</span><span>体験② CSSミニワーク（15分）← 新規追加</span>
+<span class="schedule-time">14:45-15:00</span><span>座学③ Bootstrap入門（15分）</span>
 <span class="schedule-time">15:00-15:05</span><span>休憩</span>
-<span class="schedule-time">15:05-16:35</span><span>実践 Bootstrap Web制作演習（90分）</span>
-<span class="schedule-time">16:35-17:35</span><span>成果発表（60分）</span>
+<span class="schedule-time">15:05-16:30</span><span>実践 Bootstrap Web制作演習（85分、3段階）</span>
+<span class="schedule-time">16:30-17:00</span><span>成果発表（30分）</span>
 </div>
 
 ---
@@ -525,6 +526,55 @@ h1 {
 - 参考にして自分のサイトに応用
 
 </div>
+
+</div>
+
+---
+
+<!-- _class: title -->
+
+# 体験②
+# CSSミニワーク
+
+---
+
+## 3つのミッションをクリアしよう
+
+### 実践でCSSの基本を学ぶ（15分）
+
+**ファイル**: `templates/03_css-mini-exercise.html`
+
+<div class="two-columns">
+
+<div>
+
+**ミッション1（5分）**
+- h1の色を好きな色に変える
+- CSSの基本文法を体験
+
+**ミッション2（5分）**
+- boxにpaddingとmarginをつける
+- 余白の違いを体感
+
+</div>
+
+<div>
+
+**ミッション3（5分）**
+- Chrome検証ツールで他サイトの色をコピー
+- 実務で使えるテクニック
+
+**わからなければAI活用OK！**
+- 「CSSでh1の色を変える方法は？」
+- 「paddingとmarginの違いは？」
+
+</div>
+
+</div>
+
+<div class="highlight">
+
+**目標**: CSSを書く→ブラウザで確認→修正、のサイクルを体験しよう
 
 </div>
 
@@ -884,15 +934,20 @@ h1 {
 
 ---
 
-## 制作時間：90分
+## 制作時間：85分（3段階）
 
-### タイムライン
+### Phase別タイムライン
 
 <div class="schedule-grid">
-<span class="schedule-time">0-5分</span><span>役割分担・企画</span>
-<span class="schedule-time">5-75分</span><span>制作（各自 or チームで相談しながら）</span>
-<span class="schedule-time">75-85分</span><span>仕上げ・動作確認</span>
-<span class="schedule-time">85-90分</span><span>提出</span>
+<span class="schedule-time">Phase 1（0-25分）</span><span>土台作り：navbar + ヒーローセクション</span>
+<span class="schedule-time">Phase 2（25-55分）</span><span>コンテンツ充実：card 3つ + 説明文100字以上</span>
+<span class="schedule-time">Phase 3（55-85分）</span><span>磨き上げ：カスタマイズ + 最終調整</span>
+</div>
+
+<div class="highlight">
+
+**25分・55分時点で全員メインルームに戻り、進捗確認を行います**
+
 </div>
 
 **チームワーク**:
@@ -905,14 +960,14 @@ h1 {
 
 ## 成果発表
 
-### 発表内容（各チーム8分）
+### 発表内容（各チーム4分）
 
 1. **何を作ったか**（テーマ）
 2. **工夫したポイント**
 3. **つまずいたポイント**
 4. **AIをどう活用したか**（任意）
 
-**発表時間**: 60分（全7チーム × 8分 + バッファ）
+**発表時間**: 30分（6-7チーム × 4分）
 
 **相互フィードバック**: 各チーム発表後に質問・感想タイム
 

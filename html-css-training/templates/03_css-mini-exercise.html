@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSSミニワーク</title>
+
+  <style>
+    /* ========================================
+       ミッション1: h1の色を好きな色に変える（5分）
+       ======================================== */
+
+    /* 💡 ヒント: h1 { color: 色の名前; } */
+    /* 💡 使える色の例: red, blue, green, purple, orange, pink */
+    /* 💡 AIに聞いてもOK: 「CSSでh1の色を変える方法は？」 */
+
+    /* ここにCSSを書いてください */
+
+
+
+    /* ========================================
+       ミッション2: .boxにpaddingとmarginをつける（5分）
+       ======================================== */
+
+    /* 💡 ヒント: .box { padding: 20px; margin: 10px; } */
+    /* 💡 padding: 箱の内側の余白 */
+    /* 💡 margin: 箱の外側の余白 */
+    /* 💡 数字を変えると余白の大きさが変わる！試してみよう */
+
+    /* ここにCSSを書いてください */
+    .box {
+      border: 2px solid #333;  /* 枠線（変更しなくてOK） */
+      background-color: #f0f0f0;  /* 背景色（変更しなくてOK） */
+      /* ↓ ここにpaddingとmarginを追加してください */
+
+    }
+
+
+    /* ========================================
+       ミッション3: Chrome検証ツールで色をコピーする（5分）
+       ======================================== */
+
+    /* 💡 手順:
+       1. ブラウザで好きなサイト（Googleなど）を開く
+       2. F12キーを押す（Macの場合: Cmd + Option + I）
+       3. 左上の矢印アイコンをクリック
+       4. 気に入った色の部分をクリック
+       5. 右側のStylesパネルで color や background-color の値をコピー
+       6. 下の .mission3 に貼り付ける
+    */
+
+    /* ここにコピーした色を使ってください */
+    .mission3 {
+      /* 例: color: #1a73e8; */
+      /* 例: background-color: rgb(26, 115, 232); */
+
+    }
+  </style>
+</head>
+<body>
+
+  <!-- タイトル -->
+  <h1>CSSミニワーク</h1>
+  <p style="font-size: 18px; margin-bottom: 40px;">3つのミッションをクリアしよう！（各5分）</p>
+
+  <!-- ミッション1 -->
+  <div class="box">
+    <h2>✨ ミッション1: h1の色を変える（5分）</h2>
+    <p><strong>目標:</strong> 一番上の「CSSミニワーク」の文字色を好きな色に変えましょう</p>
+    <p><strong>方法:</strong> 上の &lt;style&gt; タグの中に、以下のように書いてください</p>
+    <pre style="background-color: white; padding: 10px; border: 1px solid #ccc;">h1 {
+  color: blue;  /* ← 好きな色に変える */
+}</pre>
+    <p><strong>使える色の例:</strong> red, blue, green, purple, orange, pink, brown, navy</p>
+    <p><strong>💡 わからなければAIに聞こう:</strong> 「CSSでh1の色を変える方法は？」</p>
+    <p>✅ <strong>完成の目安:</strong> ページ上部の「CSSミニワーク」の色が変わっていればOK！</p>
+  </div>
+
+  <!-- ミッション2 -->
+  <div class="box">
+    <h2>📦 ミッション2: 箱に余白をつける（5分）</h2>
+    <p><strong>目標:</strong> この灰色の箱に、内側の余白（padding）と外側の余白（margin）をつけましょう</p>
+    <p><strong>方法:</strong> 上の &lt;style&gt; タグの中の <code>.box</code> に、以下を追加してください</p>
+    <pre style="background-color: white; padding: 10px; border: 1px solid #ccc;">.box {
+  border: 2px solid #333;
+  background-color: #f0f0f0;
+  padding: 20px;   /* ← この行を追加 */
+  margin: 15px;    /* ← この行を追加 */
+}</pre>
+    <p><strong>違いを確認:</strong></p>
+    <ul>
+      <li><strong>padding</strong>: 箱の<strong>内側</strong>の余白（文字と枠の間）</li>
+      <li><strong>margin</strong>: 箱の<strong>外側</strong>の余白（箱と箱の間）</li>
+    </ul>
+    <p><strong>💡 数字を変えて試してみよう:</strong> padding: 50px; にすると余白が広くなる！</p>
+    <p>✅ <strong>完成の目安:</strong> 箱の文字と枠の間に余白ができて、箱同士の間隔が空いていればOK！</p>
+  </div>
+
+  <!-- ミッション3 -->
+  <div class="box mission3">
+    <h2>🔍 ミッション3: Chrome検証ツールで色をコピーする（5分）</h2>
+    <p><strong>目標:</strong> 他のサイトで使われている色を、Chrome検証ツールでコピーして、この箱に適用しましょう</p>
+    <p><strong>手順:</strong></p>
+    <ol>
+      <li>新しいタブでGoogleやYahoo!などのサイトを開く</li>
+      <li><strong>F12キー</strong>を押す（Macの場合: <strong>Cmd + Option + I</strong>）</li>
+      <li>左上の<strong>矢印アイコン（要素選択）</strong>をクリック</li>
+      <li>気に入った色の部分（ボタンやリンクなど）をクリック</li>
+      <li>右側のStylesパネルで <code>color</code> や <code>background-color</code> の値を確認</li>
+      <li>値をコピーして、上の &lt;style&gt; タグの <code>.mission3</code> に貼り付ける</li>
+    </ol>
+    <pre style="background-color: white; padding: 10px; border: 1px solid #ccc;">.mission3 {
+  color: #1a73e8;           /* ← コピーした色を貼り付け */
+  background-color: #f8f9fa; /* ← コピーした色を貼り付け */
+}</pre>
+    <p><strong>💡 色の書き方はいろいろ:</strong></p>
+    <ul>
+      <li>色の名前: <code>red</code>, <code>blue</code></li>
+      <li>16進数: <code>#1a73e8</code>, <code>#ff0000</code></li>
+      <li>RGB: <code>rgb(26, 115, 232)</code></li>
+    </ul>
+    <p>✅ <strong>完成の目安:</strong> この箱の文字色や背景色が変わっていればOK！</p>
+  </div>
+
+  <!-- 完了メッセージ -->
+  <div style="margin-top: 40px; padding: 30px; background-color: #d4edda; border-left: 5px solid #28a745; border-radius: 5px;">
+    <h2 style="color: #155724; margin-top: 0;">🎉 3つのミッション完了おめでとう！</h2>
+    <p style="color: #155724; font-size: 16px;">これでCSSの基本がわかりました！</p>
+    <ul style="color: #155724;">
+      <li>✅ CSSで文字色を変えられる</li>
+      <li>✅ paddingとmarginの違いがわかる</li>
+      <li>✅ Chrome検証ツールで他サイトの色をコピーできる</li>
+    </ul>
+    <p style="color: #155724; font-weight: bold; margin-bottom: 0;">💡 次はBootstrapを使って、本格的なWebサイトを作っていきます！</p>
+  </div>
+
+</body>
+</html>
