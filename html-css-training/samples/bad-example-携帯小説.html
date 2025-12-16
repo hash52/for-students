@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>悪い例：h1タグの誤用</title>
+  <style>
+    body {
+      font-family: "Hiragino Kaku Gothic ProN", "游ゴシック", sans-serif;
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #f5f5f5;
+      line-height: 1.8;
+    }
+    .warning {
+      background-color: #ffebee;
+      border: 2px solid #f44336;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      color: #c62828;
+      font-weight: bold;
+    }
+    .novel {
+      background-color: white;
+      padding: 30px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+  <div class="warning">
+    ⚠️ これは悪い例です！h1タグを「大きく表示したい」だけで使っています。
+  </div>
+
+  <div class="novel">
+    <h1>どーーーーーん！</h1>
+    <p>大きな音が鳴った。</p>
+    <p>僕は驚いて振り返った。</p>
+
+    <h1>衝撃の展開！！！</h1>
+    <p>そこには信じられない光景が広がっていた。</p>
+
+    <h1>次回予告</h1>
+    <p>果たして僕は無事に帰れるのか!?</p>
+    <p>次回、「運命の選択」をお楽しみに！</p>
+  </div>
+
+  <div class="warning" style="margin-top: 20px;">
+    <strong>問題点：</strong>
+    <ul style="margin: 10px 0 0 0;">
+      <li>h1は「ページの主題」を表すタグ</li>
+      <li>「大きく表示したい」だけで使うのはNG</li>
+      <li>Googleは「このページは3つの主題がある」と誤解する</li>
+      <li>スクリーンリーダーで読み上げ時に混乱を招く</li>
+    </ul>
+    <div style="margin-top: 10px;">
+      <strong>正しい方法：</strong> pタグ + CSSで「大きなフォント」にする
+    </div>
+  </div>
+</body>
+</html>

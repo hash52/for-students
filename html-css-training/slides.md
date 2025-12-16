@@ -219,19 +219,93 @@ style: |
 
 ---
 
+## 前回アンケートのフィードバック
+
+### よかったこと ✅
+
+- 全体的に概ね高評価
+- 匿名チャットで質問できた件の評判がよかった
+
+### 改善すべき点 📝
+
+- チーム内でアイスブレークの時間が欲しい
+- ChatGPTのプロジェクトの良さがイマイチ伝わらなかった
+
+### 最も多かった質問 💡
+
+**「業務でAI使う場面を知りたい」**
+
+→ 次のスライドで詳しく説明します
+
+---
+
+## 業務でAIを活用する場面
+
+<div class="two-columns">
+
+<div>
+
+**コーディング**
+
+- コード生成・補完
+- デバッグ支援
+
+**資料作成**
+
+- プレゼン資料
+- ドキュメント作成
+
+</div>
+
+<div>
+
+**AIエージェント作成**
+
+- 業務自動化
+- チャットボット
+
+**その他**
+
+- アイデア出し
+- 調査・リサーチ
+
+</div>
+
+</div>
+
+<div class="highlight">
+
+AIを活用していない業務を考える方が難しい。
+アウトプット8割はAIが作成、**自分は現場監督**。
+このスライドもAIで作成しました（marp）
+
+</div>
+
+---
+
+<!-- _class: title -->
+
+# HTML/CSS/Bootstrap 入門<br>体験ワークショップ
+
+**〜すぐに作れるWeb制作研修〜**
+
+
+---
+
 ## 今日の目標 🎯
 
 ### この研修のゴール
 
 **「細かいことを知らなくても、雑な知識でそれっぽいWebサイトが作れる」**
 
-- 学校の授業とは違う：基礎から積み上げる「地味で退屈」ではなく
+- 基礎から積み上げる「地味で退屈」な内容にはしたくない
 - **すぐに実践できる楽しさ**を体験
 - 今日学んだことを明日から使える
 
 <div class="highlight">
 
-**重要**: 細かい文法は覚えなくてOK！でも**概念は必要** → なぜなら、概念を知らないとAIに聞けないから
+**重要**: 細かい文法は覚えなくてOK！でも**概念は必要** 
+→ なぜなら、概念を知らないとAIに聞けないから
 
 </div>
 
@@ -240,16 +314,16 @@ style: |
 ## 本日の流れ
 
 <div class="schedule-grid">
-<span class="schedule-time">13:00-13:15</span><span>オープニング・環境確認</span>
-<span class="schedule-time">13:15-13:50</span><span>座学① HTML基礎</span>
-<span class="schedule-time">13:50-14:10</span><span>体験① HTMLで文章構造を作る</span>
-<span class="schedule-time">14:10-14:15</span><span>休憩</span>
-<span class="schedule-time">14:15-14:30</span><span>座学② CSS最小限（15分）</span>
-<span class="schedule-time">14:30-14:45</span><span>体験② CSSミニワーク（15分）</span>
-<span class="schedule-time">14:45-15:00</span><span>座学③ Bootstrap入門（15分）</span>
-<span class="schedule-time">15:00-15:05</span><span>休憩</span>
-<span class="schedule-time">15:05-16:30</span><span>実践 Bootstrap Web制作演習（85分、3段階）</span>
-<span class="schedule-time">16:30-17:00</span><span>成果発表（30分）</span>
+<span class="schedule-time">13:00-13:20</span><span>オープニング・環境確認</span>
+<span class="schedule-time">13:20-13:30</span><span>体験演習：ブラウザでソース観察</span>
+<span class="schedule-time">13:30-13:40</span><span>ブラウザの仕組み + HTML/CSS学習の必要性</span>
+<span class="schedule-time">13:40-13:55</span><span>座学① HTML基礎（論理と見た目の分離含む）</span>
+<span class="schedule-time">13:55-14:05</span><span>体験① HTMLで文章構造を作る</span>
+<span class="schedule-time">14:05-14:25</span><span>座学② CSS + 体験② CSSミニワーク</span>
+<span class="schedule-time">14:25-14:40</span><span>座学③ Bootstrap入門</span>
+<span class="schedule-time">14:40-16:00</span><span>実践 Bootstrap Web制作演習（80分）</span>
+<span class="schedule-time">16:00-16:45</span><span>成果発表（45分）</span>
+<span class="schedule-time">16:45-16:50</span><span>まとめ</span>
 </div>
 
 ---
@@ -273,6 +347,63 @@ style: |
 
 ---
 
+## 【体験演習】Webサイトのソースを見てみよう
+
+### ブラウザの検証ツールを使ってみよう（5分）
+
+**やること**:
+
+1. ブラウザでWebサイトを開く
+2. 右クリック → **「検証」**
+3. 発見すること：
+   - サイト内で、どんな規則性がある？
+   - Webサイトのコンテンツはどこに書かれている？
+   - サイトを跨いで、構造に規則性はある？
+
+<div class="highlight">
+
+**目標**: HTMLとCSSがどう使われているか、実際のサイトで確認しよう
+
+</div>
+
+---
+
+## ブラウザの仕組み
+
+### Webサイトはどう表示されている？
+
+**発見したこと**:
+
+- HTMLのタグ（h1, p, divなど）がある
+- テキストがそのまま書かれている
+- 画像のURLやCSSの情報がある
+
+<div class="two-columns">
+
+<div>
+
+**ブラウザがやっていること**
+
+1. HTMLを読み込む
+2. CSSを読み込む
+3. 解釈して表示
+
+</div>
+
+<div>
+
+**つまり**
+
+- スマホもPCも同じ
+- ソースがあれば表示できる
+- **構造が重要**
+
+</div>
+
+</div>
+
+---
+
 <!-- _class: title -->
 
 # 座学①
@@ -282,7 +413,7 @@ style: |
 
 ## HTMLは文章構造のマークアップ
 
-### HTMLの本質
+### HTMLの本質：論理と見た目の分離
 
 <div class="two-columns">
 
@@ -291,7 +422,7 @@ style: |
 **HTMLはデザインツールではない**
 
 - 見た目を作るものではない
-- **意味を与えるもの**
+- **意味、構造を与えるもの**
 
 **セマンティックHTML**
 
@@ -309,9 +440,13 @@ style: |
 - 見出し（大・中・小）
 - 本文
 - 箇条書き
-- 画像
 
 → これらに**意味**を与える
+
+**論理と見た目の分離**
+
+- HTML = 構造・意味
+- CSS = 見た目・デザイン
 
 </div>
 
@@ -320,6 +455,77 @@ style: |
 <div class="highlight">
 
 **重要**: HTMLは文章構造のマークアップ。デザインはCSSの役割！
+
+</div>
+
+---
+
+## 悪い例：見た目だけで構造を無視
+
+### h1タグを間違って使った例
+
+**デモ**: `samples/bad-example-携帯小説.html` を開いてみよう
+
+<div class="warning">
+
+**問題点**:
+
+- h1は「ページの主題」を表すタグ
+- 「大きく表示したい」だけで使うのはNG
+- Googleは「このページは3つの主題がある」と誤解
+- スクリーンリーダーで読み上げ時に混乱
+
+</div>
+
+<div class="highlight">
+
+**正解**: pタグ + CSSで「大きなフォント」にする
+
+</div>
+
+---
+
+## 良い例 vs 悪い例の比較
+
+### 見た目は同じでも、構造が違う！
+
+**デモ**: `samples/comparison-h1-vs-div.html` を開いて検証ツールで比較しよう
+
+<div class="two-columns">
+
+<div>
+
+**良い例：h1タグで構造化**
+
+```html
+<h1>これは見出しです</h1>
+<p>本文です。</p>
+```
+
+✅ Googleが「見出し」と認識
+✅ スクリーンリーダーで正しく読み上げ
+✅ CSSで一括デザイン変更可能
+✅ 目次を自動生成できる
+
+</div>
+
+<div>
+
+**悪い例：div+styleで見た目だけ**
+
+```html
+<div style="font-size:2rem; font-weight:bold">
+  これは見出しです
+</div>
+<div>本文です。</div>
+```
+
+❌ Googleが「ただの大きな文字」と認識
+❌ 構造が伝わらない
+❌ 後で変更するのが大変
+❌ 目次を作れない
+
+</div>
 
 </div>
 
@@ -431,7 +637,7 @@ Live Server = 保存すると自動でブラウザに反映される便利ツー
 
 ## 体験① HTMLで文章構造を作る
 
-### 自己紹介ページの構造を作ろう
+### 自己紹介ページの構造を作ろう（10分）
 
 **やること**:
 
@@ -439,10 +645,14 @@ Live Server = 保存すると自動でブラウザに反映される便利ツー
 - h1（名前）、h2（セクション）、p（説明）、ul/li（リスト）を編集
 - **デザインは一切せず、構造のみに集中**
 
-**時間**: 20分
-
 **AI活用OK**: わからなければChatGPTに聞こう
 例：「HTMLでリストを作る方法を教えて」
+
+<div class="highlight">
+
+**ポイント**: 構造を意識して、適切なタグを使おう！
+
+</div>
 
 ---
 
@@ -455,12 +665,12 @@ Live Server = 保存すると自動でブラウザに反映される便利ツー
 
 ## CSSの役割
 
-### CSSとは
+### 論理と見た目の分離を実現する
 
 **CSS = Cascading Style Sheets**
 
-- HTMLは**構造**
-- CSSは**見た目**
+- **HTML = 構造・意味**
+- **CSS = 見た目・デザイン**
 
 <div class="two-columns">
 
@@ -473,10 +683,6 @@ Live Server = 保存すると自動でブラウザに反映される便利ツー
 - 余白を調整する
 - ボーダーをつける
 
-</div>
-
-<div>
-
 **書き方**
 
 ```css
@@ -486,143 +692,121 @@ h1 {
 }
 ```
 
-- **セレクタ** = どこに（h1）
-- **プロパティ** = 何を（color）
-- **値** = どうする（blue）
+</div>
+
+<div>
+
+**最小限のプロパティ**
+
+| プロパティ | 意味 |
+|-----------|------|
+| `color` | 文字色 |
+| `background-color` | 背景色 |
+| `padding` | 内側の余白 |
+| `margin` | 外側の余白 |
+
+**Chrome検証ツール活用**
+
+- 他サイトのデザインを参考に
+- 色コードをコピー
+- padding/margin値を確認
 
 </div>
 
 </div>
-
----
-
-## 最小限のCSSプロパティ
-
-### これだけ知っていればOK
-
-| プロパティ | 意味 | 例 |
-|-----------|------|-----|
-| `color` | 文字色 | `color: red;` |
-| `background-color` | 背景色 | `background-color: #f0f0f0;` |
-| `border` | ボーダー | `border: 2px solid black;` |
-| `padding` | 内側の余白 | `padding: 10px;` |
-| `margin` | 外側の余白 | `margin: 20px;` |
 
 <div class="highlight">
 
-**細かいプロパティは覚えなくてOK！** わからなければAI or 検証ツール
-
-</div>
-
-**AIへの質問例**: 「h1タグの文字色を青にするCSSを教えて」
-
----
-
-## CSSボックスモデル
-
-### padding と margin の違い
-
-```
-┌──────────────────────────┐ ← margin（外側の余白）
-│  margin                  │
-│  ┌───────────────────┐   │
-│  │  border           │   │
-│  │  ┌─────────────┐  │   │
-│  │  │  padding    │  │   │
-│  │  │  ┌───────┐  │  │   │
-│  │  │  │content│  │  │   │
-│  │  │  └───────┘  │  │   │
-│  │  │             │  │   │
-│  │  └─────────────┘  │   │
-│  └───────────────────┘   │
-└──────────────────────────┘
-```
-
-- **padding**: 要素の内側の余白
-- **margin**: 要素の外側の余白
-
----
-
-## Chrome検証ツールの使い方
-
-### 他サイトのデザインを参考にする
-
-**手順**:
-
-1. Webページ上で **右クリック → 検証**
-2. HTMLとCSSが見える
-3. 他サイトのデザインを見て学べる
-
-<div class="two-columns">
-
-<div>
-
-**できること**
-
-- HTMLの構造を確認
-- CSSのプロパティを確認
-- その場で値を変えて試せる
-
-</div>
-
-<div>
-
-**活用方法**
-
-- 「この色いいな」→ 色コードをコピー
-- 「この余白いいな」→ padding値を確認
-- 参考にして自分のサイトに応用
-
-</div>
+**重要**: HTMLは構造、CSSは見た目！細かいプロパティは覚えなくてOK、AIに聞こう
 
 </div>
 
 ---
 
-<!-- _class: title -->
+## 体験② CSSミニワーク
 
-# 体験②
-# CSSミニワーク
-
----
-
-## 3つのミッションをクリアしよう
-
-### 実践でCSSの基本を学ぶ（15分）
+### 実践でCSSの基本を学ぶ（10分）
 
 **ファイル**: `templates/03_css-mini-exercise.html`
 
-<div class="two-columns">
+**ミッション**:
 
-<div>
-
-**ミッション1（5分）**
-- h1の色を好きな色に変える
-- CSSの基本文法を体験
-
-**ミッション2（5分）**
-- boxにpaddingとmarginをつける
-- 余白の違いを体感
-
-</div>
-
-<div>
-
-**ミッション3（5分）**
-- Chrome検証ツールで他サイトの色をコピー
-- 実務で使えるテクニック
+1. h1の色を好きな色に変える
+2. boxにpaddingとmarginをつける
+3. Chrome検証ツールで他サイトの色をコピー
 
 **わからなければAI活用OK！**
+
 - 「CSSでh1の色を変える方法は？」
 - 「paddingとmarginの違いは？」
-
-</div>
-
-</div>
 
 <div class="highlight">
 
 **目標**: CSSを書く→ブラウザで確認→修正、のサイクルを体験しよう
+
+</div>
+
+---
+
+
+## 論理と見た目の分離のメリット
+
+### なぜHTML/CSSを学ぶのか？
+
+<div class="two-columns">
+
+<div>
+
+**WYSIWYGツールの限界**
+
+- Wix, WordPress
+- 簡単だが構造が隠れる
+
+**構造が重要な理由**
+
+</div>
+
+<div>
+
+**メリット①：SEO**
+
+- Googleは構造を見ている
+- h1タグ → 検索上位表示
+
+**メリット②：アクセシビリティ**
+
+- スクリーンリーダーが構造を読む
+- 視覚障害者もWebを利用できる
+
+</div>
+
+</div>
+
+<div class="two-columns">
+
+<div>
+
+**メリット③：目次作成**
+
+- 見出し構造から自動生成
+- h1, h2, h3の階層が重要
+
+</div>
+
+<div>
+
+**メリット④：一括デザイン変更**
+
+- CSSで全ページを変更
+- ブログでタイトルデザイン変更 → 全記事に反映
+
+</div>
+
+</div>
+
+<div class="highlight">
+
+**重要**: 見た目は同じでも、構造が違うと意味が違う
 
 </div>
 
@@ -648,20 +832,32 @@ h1 {
 - ゼロから書かなくていい
 - **レスポンシブ対応が簡単**
 - デザインが統一される
-- 学習コストが低い
+
+**使い方**
+
+1. CDNで読み込む（`<link>`タグ）
+2. クラス名を書く
+3. 完成！
 
 </div>
 
 <div>
 
-**使い方**
+**CDN読み込み**
 
-1. CDNで読み込む
-2. クラス名を書く
-3. 完成！
+```html
+<link href="https://cdn.jsdelivr.net/npm/
+bootstrap@5.3.0/dist/css/bootstrap.min.css"
+rel="stylesheet">
+```
 
 **例**:
-`<button class="btn btn-primary">ボタン</button>`
+
+```html
+<button class="btn btn-primary">
+  ボタン
+</button>
+```
 
 → 青いボタンが完成
 
@@ -677,32 +873,15 @@ h1 {
 
 ---
 
-## Bootstrapの読み込み方法
+## グリッドシステム + コンポーネント
 
-### CDN経由で簡単に読み込める
+### 12カラムシステムとよく使うコンポーネント
 
-```html
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Site</title>
+<div class="two-columns">
 
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-        rel="stylesheet">
-</head>
-```
+<div>
 
-**CDN = Content Delivery Network**
-
-- ダウンロード不要
-- URLを貼るだけで使える
-
----
-
-## グリッドシステム
-
-### 12カラムシステムで柔軟なレイアウト
+**グリッドシステム**
 
 ```html
 <div class="container">
@@ -714,139 +893,68 @@ h1 {
 </div>
 ```
 
-**仕組み**:
+- `col-md-4` = タブレット以上で4/12幅
+- スマホでは全幅（自動調整）
 
-- `container` = 全体を囲む
-- `row` = 行
-- `col-md-4` = 中サイズ画面で4/12幅（3等分）
-
-<div class="highlight">
-
-**col-md-4 を3つ並べる = 3カラム（4+4+4=12）**
+**レスポンシブ**: `md` = タブレット、`lg` = PC
 
 </div>
 
----
+<div>
 
-## レスポンシブデザインの仕組み
+**よく使うコンポーネント**
 
-### 画面サイズに応じて表示を変える
-
-| サイズ | クラス | 画面幅 | デバイス |
-|--------|--------|--------|----------|
-| Extra Small | （なし） | < 576px | スマホ縦 |
-| Small | `sm` | ≥ 576px | スマホ横 |
-| Medium | `md` | ≥ 768px | タブレット |
-| Large | `lg` | ≥ 992px | PC |
-| Extra Large | `xl` | ≥ 1200px | 大画面PC |
-
-**例**: `col-md-4` = タブレット以上で4/12幅、スマホでは全幅（12/12）
-
----
-
-## コンポーネント①：navbar
-
-### ナビゲーションバー
+**navbar**: ナビゲーションバー
 
 ```html
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">My Site</a>
-    <div class="navbar-nav">
-      <a class="nav-link" href="#">ホーム</a>
-      <a class="nav-link" href="#">About</a>
-    </div>
-  </div>
+<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand">My Site</a>
 </nav>
 ```
 
-**クラスの意味**:
-
-- `navbar` = ナビゲーションバー
-- `navbar-expand-lg` = 大画面で横並び
-- `navbar-light bg-light` = 明るい背景
-
----
-
-## コンポーネント②：card
-
-### カード（情報をまとめる箱）
+**card**: 情報をまとめる箱
 
 ```html
 <div class="card">
-  <img src="image.jpg" class="card-img-top" alt="画像">
   <div class="card-body">
     <h5 class="card-title">タイトル</h5>
-    <p class="card-text">説明文です。</p>
-    <a href="#" class="btn btn-primary">詳細</a>
   </div>
 </div>
 ```
 
-**よく使う場面**:
-
-- 商品紹介
-- ブログ記事一覧
-- プロフィール
-
----
-
-## コンポーネント③：button
-
-### ボタン
+**button**: ボタン
 
 ```html
 <button class="btn btn-primary">ボタン</button>
-<button class="btn btn-success">成功</button>
-<button class="btn btn-danger">危険</button>
-<button class="btn btn-outline-secondary">アウトライン</button>
 ```
 
-**色のバリエーション**:
-
-- `btn-primary` = 青（主要）
-- `btn-success` = 緑（成功）
-- `btn-danger` = 赤（危険）
-- `btn-warning` = 黄（警告）
-- `btn-outline-*` = アウトライン
-
----
-
-## ユーティリティクラス
-
-### よく使う便利クラス
-
-| クラス | 意味 | 例 |
-|--------|------|-----|
-| `mt-3` | margin-top: 3 | 上に余白 |
-| `mb-4` | margin-bottom: 4 | 下に余白 |
-| `p-3` | padding: 3 | 内側に余白 |
-| `text-center` | 中央揃え | テキストを中央に |
-| `text-white` | 白文字 | 文字色を白に |
-| `bg-primary` | 背景色（青） | 背景を青に |
-| `d-flex` | flexbox | フレックスレイアウト |
-
-<div class="highlight">
-
-**数字は0-5**: 0=なし、1=小、3=中、5=大
+</div>
 
 </div>
 
 ---
 
-## 公式ドキュメントの使い方
+## 公式ドキュメント + AI活用
 
-### Bootstrap公式サイト
+### Bootstrap公式サイト + AI
 
-**URL**: https://getbootstrap.com/
+**公式サイト**: https://getbootstrap.com/
 
-**使い方**:
+- 「Components」セクションから探す
+- コピペできる例がたくさん
+- カスタマイズの方法も記載
 
-1. 「Components」セクションから探す
-2. コピペできる例がたくさん
-3. カスタマイズの方法も記載
+**AIへの質問例**:
 
-**AIへの質問例**: 「Bootstrapで3カラムのカードレイアウトを作りたい」
+- 「Bootstrapで3カラムのカードレイアウトを作りたい」
+- 「navbarに自分のサイト名を入れる方法を教えて」
+- 「画像を丸く表示する方法を教えて」
+
+<div class="highlight">
+
+**座学はここまで！次は実践で80分間、Webサイトを作ります**
+
+</div>
 
 ---
 
@@ -956,14 +1064,14 @@ h1 {
 
 ---
 
-## 制作時間：85分（3段階）
+## 制作時間：80分（3段階）
 
 ### Phase別タイムライン
 
 <div class="schedule-grid">
 <span class="schedule-time">Phase 1（0-25分）</span><span>土台作り：navbar + ヒーローセクション</span>
 <span class="schedule-time">Phase 2（25-55分）</span><span>コンテンツ充実：card 3つ + 説明文100字以上</span>
-<span class="schedule-time">Phase 3（55-85分）</span><span>磨き上げ：カスタマイズ + 最終調整</span>
+<span class="schedule-time">Phase 3（55-80分）</span><span>磨き上げ：カスタマイズ + 最終調整</span>
 </div>
 
 <div class="highlight">
@@ -982,16 +1090,20 @@ h1 {
 
 ## 成果発表
 
-### 発表内容（各チーム4分）
+### 発表内容（1人約3分）
 
 1. **何を作ったか**（テーマ）
 2. **工夫したポイント**
 3. **つまずいたポイント**
 4. **AIをどう活用したか**（任意）
 
-**発表時間**: 30分（6-7チーム × 4分）
+**発表時間**: 43分（15人 × 約3分）
 
-**相互フィードバック**: 各チーム発表後に質問・感想タイム
+<div class="highlight">
+
+**簡潔に発表しよう！** 工夫点・つまずき点・AI活用に焦点を絞って
+
+</div>
 
 ---
 
@@ -1003,15 +1115,24 @@ h1 {
 
 ## 今日学んだこと
 
-### 3つの重要な概念
+### 4つの重要な概念
 
-1. **HTMLは文章構造のマークアップ**
+1. **論理と見た目の分離**
+   - HTMLは構造・意味、CSSは見た目・デザイン
+   - **SEO**: Googleは構造を見ている
+   - **アクセシビリティ**: スクリーンリーダーが構造を読む
+   - **目次作成**: 見出し構造から自動生成
+   - **一括デザイン変更**: CSSで全ページを変更可能
+
+2. **HTMLは文章構造のマークアップ**
    - デザインではなく、意味を与えるもの
+   - h1は「ページの主題」、h2は「中見出し」
 
-2. **CSSは見た目の調整**
+3. **CSSは見た目の調整**
    - 文字色、背景色、余白などを調整
+   - HTMLとCSSを分離することで柔軟性が向上
 
-3. **Bootstrapは効率的なWeb制作ツール**
+4. **Bootstrapは効率的なWeb制作ツール**
    - 公式ドキュメントからコピペでOK
    - AIに聞いて使う
 
