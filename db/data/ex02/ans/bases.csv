@@ -1,0 +1,7 @@
+base_id,corp_id,base_name,base_address,manager_name
+BASE01,CORP01,渋谷営業所,東京都渋谷区,佐藤太郎
+BASE02,CORP01,新宿支店,東京都新宿区,鈴木次郎
+BASE03,CORP02,本社,大阪府大阪市,田中一郎
+BASE04,CORP03,福岡工場,福岡県糸島市,山本三郎
+BASE05,CORP02,名古屋分室,愛知県名古屋市,渡辺五郎
+BASE06,CORP03,本社,福岡県福岡市,山本三郎
