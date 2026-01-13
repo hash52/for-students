@@ -1,0 +1,6 @@
+service_id,service_name,monthly_fee
+SVC01,サーバー保守,100000
+SVC02,クラウドストレージ,50000
+SVC03,メールセキュリティ,30000
+SVC04,拠点間VPN,70000
+SVC05,バックアップ支援,40000
